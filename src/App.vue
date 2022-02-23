@@ -1,11 +1,16 @@
 <template>
+<input />
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <my-router-link to="/">home</my-router-link> |
+    <my-router-link to="/about/yi/san">About</my-router-link>
   </nav>
-  <router-view/>
+  <my-router-view/>
 </template>
-
+<script>
+import { defineComponent } from 'vue'
+export default defineComponent({
+})
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
